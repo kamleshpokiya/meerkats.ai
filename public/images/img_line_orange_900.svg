@@ -1,0 +1,38 @@
+<svg width="1155" height="501" viewBox="0 0 1155 501" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_8_1609)">
+<g filter="url(#filter0_f_8_1609)">
+<circle cx="577.5" cy="250.5" r="182.5" fill="#F54E00" fill-opacity="0.15"/>
+</g>
+<path d="M0 0C0 8.4 0 337.167 0 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M77 0C77 8.4 77 337.167 77 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M154 0C154 8.4 154 337.167 154 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M231 0C231 8.4 231 337.167 231 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M308 0C308 8.4 308 337.167 308 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M385 0C385 8.4 385 337.167 385 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M462 0C462 8.4 462 337.167 462 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M539 0C539 8.4 539 337.167 539 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M616 0C616 8.4 616 337.167 616 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M693 0C693 8.4 693 337.167 693 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M770 0C770 8.4 770 337.167 770 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M847 0C847 8.4 847 337.167 847 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M924 0C924 8.4 924 337.167 924 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M1001 0C1001 8.4 1001 337.167 1001 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M1078 0C1078 8.4 1078 337.167 1078 500.5" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M1155 75C1135.62 75 376.923 75 9.17912e-06 75" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M1155 147C1135.62 147 376.923 147 9.17912e-06 147" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M1155 219C1135.62 219 376.923 219 9.17912e-06 219" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M1155 291C1135.62 291 376.923 291 9.17912e-06 291" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M1155 363C1135.62 363 376.923 363 9.17912e-06 363" stroke="#E5E3E3" stroke-width="2"/>
+<path d="M1155 435C1135.62 435 376.923 435 9.17912e-06 435" stroke="#E5E3E3" stroke-width="2"/>
+</g>
+<defs>
+<filter id="filter0_f_8_1609" x="-105" y="-432" width="1365" height="1365" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_8_1609"/>
+</filter>
+<clipPath id="clip0_8_1609">
+<rect width="1155" height="500.5" fill="white"/>
+</clipPath>
+</defs>
+</svg>
