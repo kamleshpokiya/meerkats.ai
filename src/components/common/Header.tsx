@@ -6,9 +6,9 @@ const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full bg-global-5 border-b border-[#b3b7bc]">
-      <div className="w-full max-w-[1440px] mx-auto px-[80px] 2xl:max-w-full 2xl:px-20">
-        <div className="flex flex-row justify-between items-center py-[8px] sm:py-[12px] md:py-[16px]">
+    <header className="w-full bg-global-5 border-b border-[#B3B7BC] sticky top-0 z-50">
+      <div className=" w-full  px-[80px] 2xl:max-w-full 2xl:px-20">
+        <div className="container mx-auto flex flex-row justify-between items-center py-[8px] sm:py-[12px] md:py-0">
           {/* Logo Section */}
           <div className="flex flex-row gap-[6px] sm:gap-[8px] justify-center items-center">
             <div className="w-[28px] h-[28px] sm:w-[30px] sm:h-[30px] md:w-[32px] md:h-[32px] bg-[linear-gradient(135deg,#f54e00e5_0%,_#f54e00_100%)] rounded-[4px] p-[4px] sm:p-[5px] md:p-[6px] flex items-center justify-center">
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex flex-row justify-between items-center w-[48%] py-[10px]">
+          <nav className="hidden lg:flex flex-row justify-between items-center gap-[44px] py-[10px]">
             <a
               href="#home"
               className="text-[14px] font-inter font-normal leading-[17px] text-global-1 ml-[12px] hover:text-gray-600 transition-colors"

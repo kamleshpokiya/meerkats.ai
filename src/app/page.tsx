@@ -3,6 +3,8 @@ import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
 import Button from '@/components/ui/Button';
 import ExpandableList from '@/components/ui/ExpandableList';
+import Image from 'next/image';
+import Marquee from '@/components/ui/Marquee';
 const HomePage: React.FC = () => {
   const faqItems = [
     {
@@ -125,36 +127,102 @@ const HomePage: React.FC = () => {
     '/images/img_logo_gray_900.svg',
     '/images/img_logo.svg',
   ];
+
+  const icons = [
+    '/icons/calendar.svg',
+    '/icons/discord.svg',
+    '/icons/gaimini.svg',
+    '/icons/mail.svg',
+    '/icons/monkey.svg',
+    '/icons/slack.svg',
+    '/icons/tool.svg',
+    '/icons/postgres.svg',
+    '/icons/gpt.png',
+    '/icons/sql.png',
+    '/icons/calendar.svg',
+    '/icons/discord.svg',
+    '/icons/gaimini.svg',
+    '/icons/mail.svg',
+    '/icons/monkey.svg',
+    '/icons/slack.svg',
+    '/icons/tool.svg',
+    '/icons/postgres.svg',
+    '/icons/gpt.png',
+    '/icons/sql.png',
+  ];
+
   return (
     <div className="flex flex-col justify-start items-center w-full bg-global-5">
       {/* Header */}
       <Header />
       {/* Hero Section */}
-      <section className="w-full flex flex-row justify-start items-center">
+      <section className="container mx-auto w-full flex flex-row justify-start items-center">
         <div className="w-full flex flex-row gap-[19px] sm:gap-[28px] md:gap-[38px] justify-start items-start">
           {/* Left Decorative Image */}
-          <img
+          {/* <img
             src="/images/img_6838210483869da.svg"
             alt="Decorative"
             className="w-[52px] hidden lg:block sm:w-[78px] md:w-[104px] h-[277px] sm:h-[415px] md:h-[554px]"
-          />
+          /> */}
           {/* Main Hero Content */}
           <div className="flex flex-col justify-start items-center flex-1 mt-[56px] sm:mt-[84px] md:mt-[112px]">
-            <div className="flex flex-col gap-[12px] sm:gap-[18px] md:gap-[24px] justify-start items-center flex-1 mx-[23px] sm:mx-[34px] md:mx-[46px]">
+            <div className="flex flex-col justify-start items-center flex-1 mx-[23px] sm:mx-[34px] md:mx-[46px]">
               {/* Hero Title */}
-              <h1 className="text-[32px] sm:text-[48px] md:text-[64px] font-inter font-bold leading-[48px] sm:leading-[72px] md:leading-[96px] text-center text-global-2">
+              <h1 className="text-[32px] sm:text-[48px] md:text-[64px] font-inter font-bold leading-[48px] sm:leading-[70px]  text-center text-global-2">
                 <span>Automate your growth workflows</span>
                 <br />
                 <span>by chatting with AI</span>
               </h1>
               {/* Hero Description */}
               <p className="text-[12px]  sm:text-[18px] md:text-[24px] font-inter font-normal leading-[18px] sm:leading-[27px] md:leading-[36px] text-center text-global-3 w-full">
-                Generate leads, onboard users, send updates, and track results — all from a simple
-                spreadsheet UI, no tools to glue
+                Generate leads, onboard users, send updates, and track results
               </p>
             </div>
+
+            {/* Interactive Demo Section */}
+            <div className="w-full max-w-[1155px]">
+              <div
+                className="flex flex-row justify-center items-center w-full py-[112px]"
+                style={{
+                  backgroundImage: "url('/images/Frame.png')",
+                  backgroundSize: 'contain',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center',
+                }}
+              >
+                <div className="flex max-w-[763px] mt-2 flex-col gap-[20px] sm:gap-[30px] md:gap-[32px] justify-start items-center w-[75%]">
+                  {/* Search Input */}
+                  <div className="flex flex-row justify-between items-center w-full px-[8px] sm:px-[30px] md:px-[40px] py-[6px] sm:py-[20px] md:py-[16px] border border-[#18181B] rounded-[16px] bg-global-5">
+                    <input
+                      type="text"
+                      placeholder="Ask meerkats AI to find ceo names of recently funded startups..."
+                      className="flex-1 text-[12px] sm:text-[16px] md:text-[17px] font-inter font-normal leading-[14px] sm:leading-[21px] md:leading-[22px] text-left text-global-3 bg-transparent border-none outline-none mr-[2px] sm:mr-[12px] md:mr-[16px]"
+                    />
+                    <img
+                      src="/images/img_clarity_circle_arrow_solid.svg"
+                      alt="Submit"
+                      className="w-[16px] h-[16px] sm:w-[36px] sm:h-[36px] md:w-[40px] md:h-[40px] cursor-pointer flex-shrink-0"
+                    />
+                  </div>
+
+                  {/* Suggestion Pills */}
+                  <div className="flex flex-col sm:flex-row gap-[18px] sm:gap-[26px] md:gap-[34px] justify-start items-center w-full">
+                    <button className="w-full sm:w-auto text-[11px] sm:text-[12px] font-inter font-normal leading-[14px] sm:leading-[15px]  text-left text-global-2 border border-[#f54e00] rounded-[8px] px-[6px] py-[6px] sm:py-[8px] md:py-[10px] bg-global-5">
+                      Scrape domains, enrich, push to CRM
+                    </button>
+                    <button className="w-full sm:w-auto text-[11px] sm:text-[12px] font-inter font-normal leading-[14px] sm:leading-[15px]  text-left text-global-2 border border-[#f54e00] rounded-[8px] px-[6px] py-[6px] sm:py-[8px] md:py-[10px] bg-global-5">
+                      Add stripe customers to your CRM
+                    </button>
+                    <button className="w-full sm:w-auto text-[11px] sm:text-[12px] font-inter font-normal leading-[14px] sm:leading-[15px]  text-left text-global-2 border border-[#f54e00] rounded-[8px] px-[6px] py-[6px] sm:py-[8px] md:py-[10px] bg-global-5">
+                      Track new signups, research, post to Slack
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Hero Buttons */}
-            <div className="flex flex-col sm:flex-row gap-[8px] sm:gap-[12px] md:gap-[16px] justify-center items-center mt-[48px] sm:mt-[72px] md:mt-[96px] w-auto">
+            <div className="flex flex-col sm:flex-row gap-[8px] sm:gap-[12px] md:gap-[16px] justify-center items-center w-auto">
               <Button
                 variant="primary"
                 size="md"
@@ -170,57 +238,21 @@ const HomePage: React.FC = () => {
                 Book a call
               </Button>
             </div>
-            {/* Interactive Demo Section */}
-            <div
-              className="flex flex-row justify-center items-center w-full mt-[32px] sm:mt-[48px] md:mt-[64px] px-[32px] sm:px-[48px] md:px-[64px] py-[100px] sm:py-[150px] md:py-[200px]"
-              style={{
-                backgroundImage: "url('/images/img_line.svg')",
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-              }}
-            >
-              <div className="flex flex-col gap-[20px] sm:gap-[30px] md:gap-[40px] justify-start items-center w-[75%]">
-                {/* Search Input */}
-                <div className="flex flex-row justify-between items-center w-full px-[20px] sm:px-[30px] md:px-[40px] py-[16px] sm:py-[20px] md:py-[24px] border border-[#18181B] rounded-[16px] bg-global-5">
-                  <span className="text-[15px] sm:text-[16px] md:text-[17px] font-inter font-normal leading-[20px] sm:leading-[21px] md:leading-[22px] text-left text-global-3">
-                    Ask meerkats AI to find ceo names of recently funded startups...
-                  </span>
-                  <img
-                    src="/images/img_clarity_circle_arrow_solid.svg"
-                    alt="Submit"
-                    className="w-[32px] h-[32px] sm:w-[36px] sm:h-[36px] md:w-[40px] md:h-[40px]"
-                  />
-                </div>
-
-                {/* Suggestion Pills */}
-                <div className="flex flex-col sm:flex-row gap-[18px] sm:gap-[26px] md:gap-[34px] justify-start items-center w-full">
-                  <button className="w-full sm:w-auto text-[11px] sm:text-[12px] font-inter font-normal leading-[14px] sm:leading-[15px]  text-left text-global-2 border border-[#f54e00] rounded-[8px] px-[6px] py-[6px] sm:py-[8px] md:py-[10px] bg-global-5">
-                    Scrape domains, enrich, push to CRM
-                  </button>
-                  <button className="w-full sm:w-auto text-[11px] sm:text-[12px] font-inter font-normal leading-[14px] sm:leading-[15px]  text-left text-global-2 border border-[#f54e00] rounded-[8px] px-[6px] py-[6px] sm:py-[8px] md:py-[10px] bg-global-5">
-                    Add stripe customers to your CRM
-                  </button>
-                  <button className="w-full sm:w-auto text-[11px] sm:text-[12px] font-inter font-normal leading-[14px] sm:leading-[15px]  text-left text-global-2 border border-[#f54e00] rounded-[8px] px-[6px] py-[6px] sm:py-[8px] md:py-[10px] bg-global-5">
-                    Track new signups, research, post to Slack
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
           {/* Right Decorative Image */}
-          <img
+          {/* <img
             src="/images/img_6838210483869da_white_a700.svg"
             alt="Decorative"
             className="w-[52px] hidden lg:block sm:w-[78px] md:w-[104px] h-[277px] sm:h-[415px] md:h-[554px]"
-          />
+          /> */}
         </div>
       </section>
 
       {/* VIBE Section */}
-      <section className="w-full mt-[35px] sm:mt-[52px] md:mt-[70px] py-[40px] sm:py-[60px] md:pb-[80px] sm:bg-[url('/images/img_union.png')] sm:bg-[length:106%_100%] sm:bg-center">
-        <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+      <section className=" w-full mt-[35px] sm:mt-[52px] md:mt-[70px] py-[40px] sm:py-[60px] md:pb-[80px] sm:bg-[url('/images/img_union.png')] sm:bg-[length:106%_100%] sm:bg-center">
+        <div className="container w-full  mx-auto flex flex-col justify-start items-center">
           {/* VIBE Header */}
-          <div className="flex sm:flex-row  flex-wrap justify-between items-center w-full sm:px-[90px] md:px-[120px] mt-[22px] sm:mt-[33px] ">
+          <div className="max-w-[1440px] flex sm:flex-row  flex-wrap justify-between items-center w-full px-10 mt-[22px] sm:mt-[33px] ">
             <h2 className="text-[20px] sm:text-[30px] md:text-[40px] font-inter font-semibold leading-[24px] sm:leading-[36px] md:leading-[48px] text-left text-global-2 w-[46%] mb-[9px] sm:mb-[13px] md:mb-[18px]">
               VIBE CODING, BUT FOR
               <br />
@@ -237,7 +269,7 @@ const HomePage: React.FC = () => {
             </p>
           </div>
           {/* Company Logos */}
-          <div className="w-full mt-[161px] sm:mt-[241px] md:mt-[135px]">
+          {/* <div className="w-full mt-[161px] sm:mt-[241px] md:mt-[135px]">
             <div className="flex flex-row justify-between items-center w-full py-[44px] sm:py-[66px] md:py-[88px] bg-global-4 overflow-x-auto">
               {companyLogos.map((logo, index) => (
                 <img
@@ -248,9 +280,79 @@ const HomePage: React.FC = () => {
                 />
               ))}
             </div>
+          </div> */}
+
+          <div className="w-full max-w-[1440px]">
+            <div className="w-auto py-[60px] sm:py-[80px] md:pt-[100px] md:pb-0 rounded-[20px] mx-[20px] sm:mx-[40px] md:mx-[60px]">
+              {/* Section Header */}
+              <div className="text-center mb-[40px] sm:mb-[60px] md:mb-[80px]">
+                <h2 className="text-[24px] sm:text-[32px] md:text-[40px] font-inter font-bold leading-[28px] sm:leading-[38px] md:leading-[48px] text-global-2 mb-[8px]">
+                  Plug AI into your own data &
+                </h2>
+                <h3 className="text-[24px] sm:text-[32px] md:text-[40px] font-inter font-bold leading-[28px] sm:leading-[38px] md:leading-[48px] text-[#f54e00]">
+                  over 500 integrations
+                </h3>
+              </div>
+
+              {/* Integration Icons Grid */}
+              <div
+                className="space-y-[20px] sm:space-y-[30px] md:space-y-[40px]"
+                style={{
+                  maskImage:
+                    'linear-gradient(to right, transparent 0.5rem, #000 10rem, #000 calc(100% - 10rem), transparent calc(100% - 0.5rem))',
+                }}
+              >
+                {/* Top Row */}
+                <Marquee speed={30} gradient={false} className="flex items-center">
+                  {icons.map((logo, index) => (
+                    <div key={index} className="mx-[8px] sm:mx-[12px] md:mx-[16px] flex-shrink-0">
+                      <div className="w-[40px] sm:w-[50px] md:w-[60px] h-[40px] sm:h-[50px] md:h-[60px] bg-global-5 rounded-[8px] flex items-center justify-center border border-global-3">
+                        <img
+                          src={logo}
+                          alt={`Integration ${index + 1}`}
+                          className="w-[20px] sm:w-[24px] md:w-[28px] h-[20px] sm:h-[24px] md:h-[28px] object-contain"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </Marquee>
+
+                {/* Bottom Row */}
+                <Marquee
+                  speed={30}
+                  gradient={false}
+                  direction="right"
+                  className="flex items-center"
+                >
+                  {icons.map((logo, index) => (
+                    <div key={index} className="mx-[8px] sm:mx-[12px] md:mx-[16px] flex-shrink-0">
+                      <div className="w-[40px] sm:w-[50px] md:w-[60px] h-[40px] sm:h-[50px] md:h-[60px] bg-global-5 rounded-[8px] flex items-center justify-center border border-global-3">
+                        <img
+                          src={logo}
+                          alt={`Integration ${index + 1}`}
+                          className="w-[20px] sm:w-[24px] md:w-[28px] h-[20px] sm:h-[24px] md:h-[28px] object-contain"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </Marquee>
+              </div>
+
+              {/* CTA Button */}
+              <div className="text-center mt-[40px] sm:mt-[50px] md:mt-[60px]">
+                <Button
+                  variant="primary"
+                  size="md"
+                  className="px-[32px] sm:px-[40px] md:px-[48px] py-[12px] sm:py-[14px] md:py-[16px] text-[14px] sm:text-[16px] md:text-[18px] font-inter font-bold leading-[18px] sm:leading-[20px] md:leading-[22px] bg-global-1 text-button-1 border border-[#2e2e2e] rounded-[10px] shadow-[0px_4px_6px_#cccccc]"
+                >
+                  Browse all Integrations
+                </Button>
+              </div>
+            </div>
           </div>
+
           {/* Benefit Cards */}
-          <div className="flex flex-col lg:flex-row gap-[30px] sm:gap-[45px] md:gap-[60px] w-full mt-[52px] sm:mt-[78px] md:mt-[104px] px-[60px] sm:px-[90px] md:px-[120px]">
+          <div className="max-w-[1440px]  flex flex-col lg:flex-row gap-[30px] sm:gap-[45px] md:gap-[60px] w-full mt-[52px] sm:mt-[78px] md:mt-[104px] px-[60px] sm:px-[90px] md:px-[120px]">
             {benefitCards.map((card, index) => (
               <div
                 key={index}
@@ -259,7 +361,7 @@ const HomePage: React.FC = () => {
                 <img
                   src={card.icon}
                   alt="Benefit Icon"
-                  className="w-[13px]  md:w-[26px] h-[13px] sm:w-[19px] md:h-[26px] mt-[28px] sm:mt-[42px] md:mt-[57px]"
+                  className="w-[13px]  md:w-[26px] h-[13px] sm:w-[19px] md:h-[26px]"
                 />
                 <p className="text-[12px] sm:text-[18px] md:text-[24px] font-inter font-normal leading-[16px] sm:leading-[24px] md:leading-[33px] text-left text-global-3 self-center w-[90%]">
                   {card.text}
@@ -277,41 +379,66 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Feature Sections */}
-      <div className="w-full flex flex-col justify-start items-center">
+      <div className="   w-full flex flex-col justify-start items-center">
         {/* Launch Growth Workflows */}
-        <section className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] sm:py-[34px] md:py-[46px]">
-          <img
+        <section className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px]">
+          {/* <img
             src="/images/clip.png"
             alt="Decorative"
             className="w-[52px] hidden lg:block border border-[#F0F0F0] rounded-[10px] sm:w-[78px] md:w-[104px] h-[385px] sm:h-[577px] md:h-[770px]"
-          />
-          <div className="flex flex-col lg:flex-row justify-start items-center flex-1 px-[20px] lg:px-[60px] sm:px-[90px] md:px-[120px] w-full">
-            <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full lg:w-[46%] mt-[20px] lg:mt-[99px] sm:mt-[148px] md:mt-[199px]">
+          /> */}
+          <div className="container mx-auto flex flex-col lg:flex-row justify-start items-center flex-1 w-full">
+            <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full lg:w-[46%]">
               <h3 className="text-[18px] sm:text-[24px] md:text-[32px] font-inter font-semibold leading-[24px] sm:leading-[33px] md:leading-[44px] text-left text-global-2 w-full">
                 Launch growth workflows by chatting with AI
               </h3>
               <p className="text-[14px] sm:text-[13px] md:text-[18px] font-inter font-normal leading-[20px] sm:leading-[20px] md:leading-[27px] text-left text-global-3 w-full">
-                Describe what you want: the campaign logic, the audience, the tone. The AI agent
-                builds the entire workflow — scraping leads, messaging logic, and follow-ups.
+                Describe what you want: the campaign logic, the audience, the tone.
               </p>
+              <p className="text-[14px] sm:text-[13px] md:text-[18px] font-inter font-normal leading-[20px] sm:leading-[20px] md:leading-[27px] text-left text-global-3 w-full">
+                The AI agent builds the entire workflow — scraping leads, messaging logic, and
+                follow-ups.
+              </p>
+              <div className="flex items-center gap-[12px] mt-[16px]">
+                <span className="text-[32px] font-inter font-bold text-[#f54e00] leading-[1]">
+                  10X
+                </span>
+                <div className="flex flex-col">
+                  <span className="text-[14px] sm:text-[13px] md:text-[18px] font-inter font-normal leading-[20px] sm:leading-[20px] md:leading-[27px] text-left text-global-3">
+                    faster from idea to live campaign.
+                  </span>
+                  <span className="text-[14px] sm:text-[13px] md:text-[18px] font-inter font-normal leading-[20px] sm:leading-[20px] md:leading-[27px] text-left text-global-3">
+                    Just chat, build, and launch — in minutes
+                  </span>
+                </div>
+              </div>
             </div>
-            <img
-              src="/images/img_placeholder_image.png"
+            <Image
+              src="/images/ai-bot.webp"
               alt="Launch Growth Workflows"
               className="w-full lg:w-[46%] h-[200px] sm:h-[480px] md:h-[640px] rounded-[20px] mt-[20px] lg:mt-0 lg:ml-[40px] sm:ml-[60px] md:ml-[80px]"
+              width={500}
+              height={500}
             />
           </div>
         </section>
 
         {/* Edit Automation Workflow */}
-        <section className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] sm:py-[34px] md:py-[46px]">
-          <div className="flex flex-col lg:flex-row justify-end items-center flex-1 px-[20px] lg:px-[60px] sm:px-[90px] md:px-[120px] w-full">
-            <img
-              src="/images/img_placeholder_image.png"
+        <section className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px]">
+          {/* <img
+            src="/images/clip.png"
+            alt="Decorative"
+            className="w-[52px] hidden lg:block border border-[#F0F0F0] rounded-[10px] sm:w-[78px] md:w-[104px] h-[385px] sm:h-[577px] md:h-[770px]"
+          /> */}
+          <div className="container mx-auto flex flex-col lg:flex-row items-center flex-1 w-full">
+            <Image
+              src="/images/ai-spreadsheet.webp"
               alt="Edit Automation Workflow"
               className="w-full lg:w-[46%] h-[200px] sm:h-[480px] md:h-[640px] rounded-[20px] order-1 lg:order-1"
+              width={500}
+              height={500}
             />
-            <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full lg:w-[46%] mt-[20px] lg:mt-[106px] lg:ml-[40px] sm:ml-[60px] md:ml-[80px] sm:mt-[159px] md:mt-[213px] order-2 lg:order-2">
+            <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full lg:w-[46%] mt-5 sm:mt-00  lg:ml-[40px] sm:ml-[60px] md:ml-[80px] order-2 lg:order-2">
               <h3 className="text-[18px] sm:text-[24px] md:text-[32px] font-inter font-semibold leading-[24px] sm:leading-[33px] md:leading-[44px] text-left text-global-2 w-full">
                 Edit every step of your automation workflow — in an AI spreadsheet
               </h3>
@@ -321,24 +448,32 @@ const HomePage: React.FC = () => {
                 <br />
                 You can change anything instantly. No learning curve.
               </p>
+              <div className="flex items-center gap-[12px] mt-[16px]">
+                <span className="text-[32px] font-inter font-bold text-[#f54e00] leading-[1]">
+                  20+
+                </span>
+                <div className="flex flex-col">
+                  <span className="text-[14px] sm:text-[13px] md:text-[18px] font-inter font-normal leading-[20px] sm:leading-[20px] md:leading-[27px] text-left text-global-3">
+                    hours saved from debugging complex flows.
+                  </span>
+                  <span className="text-[14px] sm:text-[13px] md:text-[18px] font-inter font-normal leading-[20px] sm:leading-[20px] md:leading-[27px] text-left text-global-3">
+                    No node rewiring headaches
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
-          <img
-            src="/images/clip2.png"
-            alt="Decorative"
-            className="w-[52px] hidden lg:block sm:w-[78px] md:w-[104px] h-[385px] sm:h-[577px] md:h-[770px]"
-          />
         </section>
 
         {/* Integrate with MCP Server */}
-        <section className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] sm:py-[34px] md:py-[46px]">
-          <img
+        <section className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px]">
+          {/* <img
             src="/images/clip.png"
             alt="Decorative"
             className="w-[52px] hidden lg:block border border-[#F0F0F0] rounded-[10px] sm:w-[78px] md:w-[104px] h-[385px] sm:h-[577px] md:h-[770px]"
-          />
-          <div className="flex flex-col lg:flex-row justify-start items-center flex-1 px-[20px] lg:px-[60px] sm:px-[90px] md:px-[120px] w-full">
-            <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full lg:w-[46%] mt-[20px] lg:mt-[99px] sm:mt-[148px] md:mt-[199px]">
+          /> */}
+          <div className="container mx-auto flex flex-col lg:flex-row justify-start items-center flex-1 w-full">
+            <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full lg:w-[46%] mt-[20px] sm:mt-0">
               <h3 className="text-[18px] sm:text-[24px] md:text-[32px] font-inter font-semibold leading-[24px] sm:leading-[33px] md:leading-[44px] text-left text-global-2 w-full">
                 Integrate with any app using MCP server
               </h3>
@@ -346,24 +481,46 @@ const HomePage: React.FC = () => {
                 Hook into any app instantly using MCP servers and pull/push data. No integration
                 headaches - a seamless access to power the campaigns.
               </p>
+              <div className="flex items-center gap-[12px] mt-[16px]">
+                <span className="text-[32px] font-inter font-bold text-[#f54e00] leading-[1]">
+                  1-click
+                </span>
+                <div className="flex flex-col">
+                  <span className="text-[14px] sm:text-[13px] md:text-[18px] font-inter font-normal leading-[20px] sm:leading-[20px] md:leading-[27px] text-left text-global-3">
+                    stack integration.
+                  </span>
+                  <span className="text-[14px] sm:text-[13px] md:text-[18px] font-inter font-normal leading-[20px] sm:leading-[20px] md:leading-[27px] text-left text-global-3">
+                    No limits. No setup pain
+                  </span>
+                </div>
+              </div>
             </div>
-            <img
-              src="/images/img_placeholder_image.png"
+            <Image
+              src="/images/mcp-server.jpg"
               alt="Integrate with MCP Server"
               className="w-full lg:w-[46%] h-[200px] sm:h-[480px] md:h-[640px] rounded-[20px] mt-[20px] lg:mt-0 lg:ml-[40px] sm:ml-[60px] md:ml-[80px]"
+              width={500}
+              height={500}
             />
           </div>
         </section>
 
         {/* Track Lead Journey */}
-        <section className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] sm:py-[34px] md:py-[46px]">
-          <div className="flex flex-col lg:flex-row justify-end items-center flex-1 px-[20px] lg:px-[60px] sm:px-[90px] md:px-[120px] w-full">
-            <img
-              src="/images/img_placeholder_image.png"
+        <section className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px]">
+          {/* <img
+            src="/images/clip.png"
+            alt="Decorative"
+            className="w-[52px] hidden lg:block border border-[#F0F0F0] rounded-[10px] sm:w-[78px] md:w-[104px] h-[385px] sm:h-[577px] md:h-[770px]"
+          /> */}
+          <div className="container mx-auto flex flex-col lg:flex-row  items-center flex-1  w-full">
+            <Image
+              src="/images/ai-lead.webp"
               alt="Track Lead Journey"
               className="w-full lg:w-[46%] h-[200px] sm:h-[480px] md:h-[640px] rounded-[20px] order-1 lg:order-1"
+              width={500}
+              height={500}
             />
-            <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full lg:w-[46%] mt-[20px] lg:mt-[106px] lg:ml-[40px] sm:ml-[60px] md:ml-[80px] sm:mt-[159px] md:mt-[213px] order-2 lg:order-2">
+            <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full lg:w-[46%] mt-[20px]  lg:ml-[40px] sm:ml-[60px] md:ml-[80px] sm:mt-0 order-2 lg:order-2">
               <h3 className="text-[18px] sm:text-[24px] md:text-[32px] font-inter font-semibold leading-[24px] sm:leading-[33px] md:leading-[44px] text-left text-global-2 w-full">
                 Track every lead journey — from first message to closed deal
               </h3>
@@ -373,17 +530,25 @@ const HomePage: React.FC = () => {
                 <br />
                 All insights live inside the same spreadsheet UI.
               </p>
+              <div className="flex items-center gap-[12px] mt-[16px]">
+                <span className="text-[32px] font-inter font-bold text-[#f54e00] leading-[1]">
+                  360°
+                </span>
+                <div className="flex flex-col">
+                  <span className="text-[14px] sm:text-[13px] md:text-[18px] font-inter font-normal leading-[20px] sm:leading-[20px] md:leading-[27px] text-left text-global-3">
+                    visibility to every lead;
+                  </span>
+                  <span className="text-[14px] sm:text-[13px] md:text-[18px] font-inter font-normal leading-[20px] sm:leading-[20px] md:leading-[27px] text-left text-global-3">
+                    Zero dashboard hopping
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
-          <img
-            src="/images/clip2.png"
-            alt="Decorative"
-            className="w-[52px] hidden lg:block sm:w-[78px] md:w-[104px] h-[385px] sm:h-[577px] md:h-[770px]"
-          />
         </section>
       </div>
       {/* Idea to Execution Section */}
-      <section className="w-full py-[73px] sm:py-[109px] md:py-[146px]">
+      <section className="container mx-auto w-full py-[73px] sm:py-[109px] md:py-[146px]">
         <div
           className="w-full relative"
           // style={{
@@ -448,8 +613,8 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="w-full py-[32px] sm:py-[48px] md:py-[64px]">
-        <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="container mx-auto w-full py-[32px] sm:py-[48px] md:py-[64px]">
+        <div className="w-full">
           <div className="flex flex-col gap-[20px] sm:gap-[30px] md:gap-[40px] justify-start items-center w-full">
             {/* Section Header */}
             <div className="flex flex-col gap-[23px] sm:gap-[34px] md:gap-[46px] justify-start items-center w-full">
@@ -466,7 +631,7 @@ const HomePage: React.FC = () => {
                       className="w-full h-full"
                     />
                   </div>
-                  <p className="font-bold text-global-2">meerkats.ai</p>
+                  <p className="font-bold text-2xl text-global-2">meerkats.ai</p>
                 </div>
                 {/* Right Line */}
                 <div className="flex-1 h-[1px] bg-[#D9D9D9]"></div>
@@ -507,10 +672,12 @@ const HomePage: React.FC = () => {
               </div>
               {/* How It Works Image */}
               <div className="w-full lg:w-[46%]">
-                <img
-                  src="/images/img_placeholder_image.png"
+                <Image
+                  src="/images/how2.png"
                   alt="How It Works"
                   className="w-full h-[320px] sm:h-[480px] md:h-[640px] rounded-[20px] bg-gray-100"
+                  width={500}
+                  height={500}
                 />
               </div>
             </div>
@@ -520,17 +687,17 @@ const HomePage: React.FC = () => {
 
       {/* Discovery Call Section */}
       <section
-        className="w-full py-[77px] sm:py-[115px] md:mt-[-1px] md:py-[154px]"
+        className="w-full py-[77px] sm:py-[115px] md:mt-[-1px] md:py-[154px] "
         style={{
           backgroundImage: "url('/images/img_union_gray_50.svg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-[42px] sm:gap-[63px] md:gap-[84px] justify-start items-center w-full max-w-[1308px] mx-auto mt-[2px] sm:mt-[3px] md:mt-[4px] px-[32px] sm:px-[48px] md:px-[64px]">
-            <div className="flex flex-col gap-[42px] sm:gap-[63px] md:gap-[84px] justify-start items-center flex-1">
-              <div className="flex flex-col justify-start items-start flex-1 px-[32px] sm:px-[48px] md:px-[64px]">
+        <div className=" w-full  px-4">
+          <div className="flex flex-col gap-[42px] sm:gap-[63px] md:gap-[84px] justify-start w-full mx-auto mt-[2px] sm:mt-[3px] md:mt-[4px] ">
+            <div className="flex flex-col gap-[42px] sm:gap-[63px] md:gap-[84px] justify-start  flex-1">
+              <div className="container mx-auto px-4 flex flex-col justify-start items-start flex-1">
                 <h2 className="text-[20px] mb-6 sm:text-[30px] md:text-[40px] font-inter font-light italic leading-[24px] sm:leading-[36px] md:leading-[49px] text-left text-global-2 w-auto">
                   Book a discovery call and we will build together:
                 </h2>
@@ -551,19 +718,25 @@ const HomePage: React.FC = () => {
                   No slides. No fluff. Just working outbound, fast.
                 </p>
               </div>
-              <img
-                src="/images/img_placeholder_image_400x1312.png"
-                alt="Discovery Call"
-                className="w-full h-[200px] sm:h-[300px] md:h-[400px] rounded-[20px]"
-              />
+              <div className="px-[32px]">
+                <Image
+                  src="/images/discovery.webp"
+                  alt="Discovery Call"
+                  className="w-full object-cover h-[200px] sm:h-[300px] md:h-[450px] rounded-[20px]"
+                  width={500}
+                  height={500}
+                />
+              </div>
             </div>
-            <Button
-              variant="primary"
-              size="md"
-              className="px-[24px] sm:px-[30px] md:px-[70px] py-[10px] sm:py-[11px] md:py-[12px] text-[14px] sm:text-[15px] md:text-[16px] font-inter font-bold leading-[18px] sm:leading-[19px] md:leading-[20px] bg-global-1 text-button-1 border border-[#2e2e2e] rounded-[10px] shadow-[0px_4px_6px_#cccccc]"
-            >
-              Book a call
-            </Button>
+            <div className="flex justify-center items-center">
+              <Button
+                variant="primary"
+                size="md"
+                className="px-[24px]  sm:px-[30px] md:px-[70px] py-[10px] sm:py-[11px] md:py-[12px] text-[14px] sm:text-[15px] md:text-[16px] font-inter font-bold leading-[18px] sm:leading-[19px] md:leading-[20px] bg-global-1 text-button-1 border border-[#2e2e2e] rounded-[10px] shadow-[0px_4px_6px_#cccccc]"
+              >
+                Book a call
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -624,42 +797,47 @@ const HomePage: React.FC = () => {
         </div>
       </section>
       {/* What Do You Want to Automate Section */}
-      <section className="w-full flex flex-col gap-[30px] sm:gap-[45px] md:gap-[60px] justify-start items-center mt-[89px] sm:mt-[133px] md:mt-[178px] sm:px-[106px] md:px-[142px]">
-        <h2 className="text-[20px] sm:text-[30px] md:text-[40px] font-inter font-bold leading-[24px] sm:leading-[36px] md:leading-[49px] text-center text-global-2 w-auto">
+      <section className="w-full flex flex-col gap-[30px] sm:gap-[45px] md:gap-[60px] justify-start items-center mt-[89px] sm:mt-[133px] md:mt-[178px] ">
+        <h2 className="text-[20px] sm:text-[30px] sm:px-[106px] md:px-[142px] md:text-[40px] font-inter font-bold leading-[24px] sm:leading-[36px] md:leading-[49px] text-center text-global-2 w-auto">
           What do you want to automate today?
         </h2>
-        <div
-          className="flex flex-row justify-center items-center w-full mt-[32px] sm:mt-[48px] md:mt-[64px] px-[32px] sm:px-[48px] md:px-[64px] py-[100px] sm:py-[150px] md:py-[200px]"
-          style={{
-            backgroundImage: "url('/images/img_line.svg')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          <div className="flex flex-col gap-[20px] sm:gap-[30px] md:gap-[40px] justify-start items-center w-[75%]">
-            {/* Search Input */}
-            <div className="flex flex-row justify-between items-center w-full px-[20px] sm:px-[30px] md:px-[40px] py-[16px] sm:py-[20px] md:py-[24px] border border-[#18181B] rounded-[16px] bg-global-5">
-              <span className="text-[15px] sm:text-[16px] md:text-[17px] font-inter font-normal leading-[20px] sm:leading-[21px] md:leading-[22px] text-left text-global-3">
-                Ask meerkats AI to find ceo names of recently funded startups...
-              </span>
-              <img
-                src="/images/img_clarity_circle_arrow_solid.svg"
-                alt="Submit"
-                className="w-[32px] h-[32px] sm:w-[36px] sm:h-[36px] md:w-[40px] md:h-[40px]"
-              />
-            </div>
+        <div className="w-full max-w-[1155px]">
+          <div
+            className="flex flex-row justify-center items-center w-full py-[112px]"
+            style={{
+              backgroundImage: "url('/images/Frame.png')",
+              backgroundSize: 'contain',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center',
+            }}
+          >
+            <div className="flex max-w-[763px] mt-2 flex-col gap-[20px] sm:gap-[30px] md:gap-[32px] justify-start items-center w-[75%]">
+              {/* Search Input */}
+              <div className="flex flex-row justify-between items-center w-full px-[8px] sm:px-[30px] md:px-[40px] py-[6px] sm:py-[20px] md:py-[16px] border border-[#18181B] rounded-[16px] bg-global-5">
+                <input
+                  type="text"
+                  placeholder="Ask meerkats AI to find ceo names of recently funded startups..."
+                  className="flex-1 text-[12px] sm:text-[16px] md:text-[17px] font-inter font-normal leading-[14px] sm:leading-[21px] md:leading-[22px] text-left text-global-3 bg-transparent border-none outline-none mr-[2px] sm:mr-[12px] md:mr-[16px]"
+                />
+                <img
+                  src="/images/img_clarity_circle_arrow_solid.svg"
+                  alt="Submit"
+                  className="w-[16px] h-[16px] sm:w-[36px] sm:h-[36px] md:w-[40px] md:h-[40px] cursor-pointer flex-shrink-0"
+                />
+              </div>
 
-            {/* Suggestion Pills */}
-            <div className="flex flex-col sm:flex-row gap-[18px] sm:gap-[26px] md:gap-[34px] justify-start items-center w-full">
-              <button className="w-full sm:w-auto text-[11px] sm:text-[12px] font-inter font-normal leading-[14px] sm:leading-[15px]  text-left text-global-2 border border-[#f54e00] rounded-[8px] px-[6px] py-[6px] sm:py-[8px] md:py-[10px] bg-global-5">
-                Scrape domains, enrich, push to CRM
-              </button>
-              <button className="w-full sm:w-auto text-[11px] sm:text-[12px] font-inter font-normal leading-[14px] sm:leading-[15px]  text-left text-global-2 border border-[#f54e00] rounded-[8px] px-[6px] py-[6px] sm:py-[8px] md:py-[10px] bg-global-5">
-                Add stripe customers to your CRM
-              </button>
-              <button className="w-full sm:w-auto text-[11px] sm:text-[12px] font-inter font-normal leading-[14px] sm:leading-[15px]  text-left text-global-2 border border-[#f54e00] rounded-[8px] px-[6px] py-[6px] sm:py-[8px] md:py-[10px] bg-global-5">
-                Track new signups, research, post to Slack
-              </button>
+              {/* Suggestion Pills */}
+              <div className="flex flex-col sm:flex-row gap-[18px] sm:gap-[26px] md:gap-[34px] justify-start items-center w-full">
+                <button className="w-full sm:w-auto text-[11px] sm:text-[12px] font-inter font-normal leading-[14px] sm:leading-[15px]  text-left text-global-2 border border-[#f54e00] rounded-[8px] px-[6px] py-[6px] sm:py-[8px] md:py-[10px] bg-global-5">
+                  Scrape domains, enrich, push to CRM
+                </button>
+                <button className="w-full sm:w-auto text-[11px] sm:text-[12px] font-inter font-normal leading-[14px] sm:leading-[15px]  text-left text-global-2 border border-[#f54e00] rounded-[8px] px-[6px] py-[6px] sm:py-[8px] md:py-[10px] bg-global-5">
+                  Add stripe customers to your CRM
+                </button>
+                <button className="w-full sm:w-auto text-[11px] sm:text-[12px] font-inter font-normal leading-[14px] sm:leading-[15px]  text-left text-global-2 border border-[#f54e00] rounded-[8px] px-[6px] py-[6px] sm:py-[8px] md:py-[10px] bg-global-5">
+                  Track new signups, research, post to Slack
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -674,7 +852,9 @@ const HomePage: React.FC = () => {
         </div>
       </section>
       {/* Footer */}
-      <Footer />
+      <div className="container mx-auto">
+        <Footer />
+      </div>
     </div>
   );
 };
