@@ -18,7 +18,9 @@ const ExpandableList: React.FC<ExpandableListProps> = ({
   className = '',
   allowMultiple = true,
 }) => {
-  const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
+  const [expandedItems, setExpandedItems] = useState<Set<string>>(
+    new Set(items.map((item) => item.id))
+  );
 
   const toggleItem = (id: string) => {
     const newExpandedItems = new Set(expandedItems);

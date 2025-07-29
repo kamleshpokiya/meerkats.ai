@@ -11,7 +11,6 @@ const HowItWorks: React.FC = () => {
   const howItWorksRef = useRef<HTMLDivElement>(null);
   const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [visibleSteps, setVisibleSteps] = useState<boolean[]>([]);
-  const [seenSteps, setSeenSteps] = useState<boolean[]>([]);
 
   const workflowSteps: WorkflowStep[] = [
     {
@@ -36,9 +35,8 @@ const HowItWorks: React.FC = () => {
   ];
 
   useEffect(() => {
-    // Initialize visibleSteps and seenSteps arrays
+    // Initialize visibleSteps array
     setVisibleSteps(new Array(workflowSteps.length).fill(false));
-    setSeenSteps(new Array(workflowSteps.length).fill(false));
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -50,21 +48,12 @@ const HowItWorks: React.FC = () => {
               newVisible[index] = entry.isIntersecting;
               return newVisible;
             });
-
-            // Mark step as seen when it becomes visible
-            if (entry.isIntersecting) {
-              setSeenSteps((prev) => {
-                const newSeen = [...prev];
-                newSeen[index] = true;
-                return newSeen;
-              });
-            }
           }
         });
       },
       {
-        threshold: 0.3,
-        rootMargin: '0px 0px -50px 0px',
+        threshold: [0, 0.1, 0.3, 0.5, 0.7, 0.9, 1],
+        rootMargin: '0px 0px -20px 0px',
       }
     );
 
@@ -129,14 +118,14 @@ const HowItWorks: React.FC = () => {
                     {/* Step Bullet and Line */}
                     <div className="flex flex-col items-center">
                       <div
-                        className={`w-[8px] sm:w-[12px] md:w-[16px] h-[8px] sm:h-[12px] md:h-[16px] rounded-[2px] transition-colors duration-700 ease-in-out ${
-                          seenSteps[index] ? 'bg-[#F97316]' : 'bg-black'
-                        }`}
+                        className={`w-[8px] sm:w-[12px] md:w-[16px] h-[8px] sm:h-[12px] md:h-[16px] rounded-[2px] transition-colors duration-700 ease-in-out 
+                          bg-black
+                        `}
                       ></div>
                       {index < workflowSteps.length - 1 && (
                         <div
                           className={`w-[2px] h-[60px] sm:h-[90px] md:h-[120px] mt-[8px] sm:mt-[12px] md:mt-[16px] transition-colors duration-700 ease-in-out ${
-                            seenSteps[index] ? 'bg-[#F97316]' : 'bg-global-3'
+                            visibleSteps[index] ? 'bg-[#F97316]' : 'bg-global-3'
                           }`}
                         ></div>
                       )}

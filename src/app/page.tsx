@@ -364,7 +364,12 @@ const HomePage: React.FC = () => {
       <div className="w-full flex flex-col justify-start items-center">
         {/* Launch Growth Workflows */}
         <FadeInAnimation delay={0} className="w-full">
-          <section className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] md:bg-[url('/images/img_6838210483869da.svg')] bg-left bg-no-repeat">
+          <section
+            className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] md:bg-[url('/images/Frame0.png')] bg-left bg-no-repeat"
+            style={{
+              backgroundSize: '100% 100%',
+            }}
+          >
             {/* <img
               src="/images/clip.png"
               alt="Decorative"
@@ -409,7 +414,12 @@ const HomePage: React.FC = () => {
 
         {/* Edit Automation Workflow */}
         <FadeInAnimation delay={100} className="w-full">
-          <section className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] sm:bg-[url('/images/img_6838210483869da_white_a700.svg')] bg-right bg-no-repeat">
+          <section
+            className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] sm:bg-[url('/images/Frame1.png')] bg-right bg-no-repeat"
+            style={{
+              backgroundSize: '100% 100%',
+            }}
+          >
             {/* <img
               src="/images/clip.png"
               alt="Decorative"
@@ -419,11 +429,11 @@ const HomePage: React.FC = () => {
               <Image
                 src="/images/ai-spreadsheet.webp"
                 alt="Edit Automation Workflow"
-                className="w-full lg:w-[46%] h-[200px] sm:h-[300px] md:h-[400px] lg:h-[480px] xl:h-[640px] rounded-[20px] order-1 lg:order-1"
+                className="w-full  h-[200px] sm:h-[300px] md:h-[400px] lg:h-[480px] xl:h-[640px] rounded-[20px] order-1 lg:order-1"
                 width={500}
                 height={500}
               />
-              <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full lg:w-[46%] mt-5 sm:mt-00  lg:ml-[40px] sm:ml-[60px] md:ml-[80px] order-2 lg:order-2">
+              <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full  mt-5 sm:mt-00  lg:ml-[40px] sm:ml-[60px] md:ml-[80px] order-2 lg:order-2">
                 <h3 className="text-[18px] sm:text-[24px] md:text-[32px] font-inter font-semibold leading-[24px] sm:leading-[33px] md:leading-[44px] text-left text-global-2 w-full">
                   Edit every step of your automation workflow — in an AI spreadsheet
                 </h3>
@@ -458,14 +468,19 @@ const HomePage: React.FC = () => {
 
         {/* Integrate with MCP Server */}
         <FadeInAnimation delay={200} className="w-full">
-          <section className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] sm:bg-[url('/images/img_6838210483869da.svg')] bg-left bg-no-repeat">
+          <section
+            className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] md:bg-[url('/images/Frame0.png')] bg-left bg-no-repeat"
+            style={{
+              backgroundSize: '100% 100%',
+            }}
+          >
             {/* <img
               src="/images/clip.png"
               alt="Decorative"
               className="w-[52px] hidden lg:block border border-[#F0F0F0] rounded-[10px] sm:w-[78px] md:w-[104px] h-[385px] sm:h-[577px] md:h-[770px]"
             /> */}
             <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 flex flex-col lg:flex-row justify-start items-center flex-1 w-full">
-              <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full lg:w-[46%] mt-[20px] sm:mt-0">
+              <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full  mt-[20px] sm:mt-0">
                 <h3 className="text-[18px] sm:text-[24px] md:text-[32px] font-inter font-semibold leading-[24px] sm:leading-[33px] md:leading-[44px] text-left text-global-2 w-full">
                   Integrate with any app using MCP server
                 </h3>
@@ -490,7 +505,7 @@ const HomePage: React.FC = () => {
               <Image
                 src="/images/mcp-server.jpg"
                 alt="Integrate with MCP Server"
-                className="w-full lg:w-[46%] h-[200px] sm:h-[300px] md:h-[400px] lg:h-[480px] xl:h-[640px] rounded-[20px] mt-[20px] lg:mt-0 lg:ml-[40px] sm:ml-[60px] md:ml-[80px]"
+                className="w-full  h-[200px] sm:h-[300px] md:h-[400px] lg:h-[480px] xl:h-[640px] rounded-[20px] mt-[20px] lg:mt-0 lg:ml-[40px] sm:ml-[60px] md:ml-[80px]"
                 width={500}
                 height={500}
               />
@@ -500,7 +515,12 @@ const HomePage: React.FC = () => {
 
         {/* Track Lead Journey */}
         <FadeInAnimation delay={300} className="w-full">
-          <section className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] sm:bg-[url('/images/img_6838210483869da_white_a700.svg')] bg-right bg-no-repeat">
+          <section
+            className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] sm:bg-[url('/images/Frame1.png')] bg-right bg-no-repeat"
+            style={{
+              backgroundSize: '100% 100%',
+            }}
+          >
             {/* <img
               src="/images/clip.png"
               alt="Decorative"
@@ -510,11 +530,11 @@ const HomePage: React.FC = () => {
               <Image
                 src="/images/ai-lead.webp"
                 alt="Track Lead Journey"
-                className="w-full lg:w-[46%] h-[200px] sm:h-[300px] md:h-[400px] lg:h-[480px] xl:h-[640px] rounded-[20px] order-1 lg:order-1"
+                className="w-full  h-[200px] sm:h-[300px] md:h-[400px] lg:h-[480px] xl:h-[640px] rounded-[20px] order-1 lg:order-1"
                 width={500}
                 height={500}
               />
-              <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full lg:w-[46%] mt-[20px]  lg:ml-[40px] sm:ml-[60px] md:ml-[80px] sm:mt-0 order-2 lg:order-2">
+              <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full  mt-[20px]  lg:ml-[40px] sm:ml-[60px] md:ml-[80px] sm:mt-0 order-2 lg:order-2">
                 <h3 className="text-[18px] sm:text-[24px] md:text-[32px] font-inter font-semibold leading-[24px] sm:leading-[33px] md:leading-[44px] text-left text-global-2 w-full">
                   Track every lead journey — from first message to closed deal
                 </h3>
@@ -593,7 +613,7 @@ const HomePage: React.FC = () => {
                   {features.map((feature, index) => (
                     <div
                       key={index}
-                      className="flex flex-col gap-[12px] sm:gap-[18px] md:gap-[24px] justify-start items-start w-full px-[10px] sm:px-[15px] md:px-[20px] py-[10px] sm:py-[15px] md:py-[20px] border border-global-3 rounded-[20px] bg-global-5 shadow-[0px_4px_4px_#d9d9d933]"
+                      className="flex flex-col gap-[12px] sm:gap-[18px] md:gap-[24px] justify-start items-start w-full px-[10px] sm:px-[15px] md:px-[20px] py-[10px] sm:py-[15px] md:py-[20px] border border-global-3 rounded-[20px] bg-global-5 shadow-[0px_4px_4px_#d9d9d933] transform transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:border-[#f54e00] hover:shadow-[#f54e00]/20 animate-fade-in-up group"
                     >
                       <img
                         src={feature.icon}
