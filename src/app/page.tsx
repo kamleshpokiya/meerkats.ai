@@ -330,7 +330,7 @@ const HomePage: React.FC = () => {
           </div>
 
           {/* Benefit Cards */}
-          <div className="max-w-[1440px] flex flex-col lg:flex-row gap-[30px] sm:gap-[45px] md:gap-[60px] w-full mt-[52px] sm:mt-[78px] md:mt-[104px] px-4 sm:px-6 md:px-8 lg:px-10">
+          <div className="max-w-[1440px] flex flex-col lg:flex-row gap-[30px] justify-between sm:gap-[45px] md:gap-[60px] w-full mt-[52px] sm:mt-[78px] md:mt-[104px] px-4 sm:px-6 md:px-8 lg:px-10">
             {benefitCards.map((card, index) => (
               <div
                 key={index}
