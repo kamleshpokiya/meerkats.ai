@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="w-full bg-global-5 py-[40px] sm:py-[60px] md:py-[80px]">
+    <footer className="w-full bg-global-5 py-[40px] sm:py-[60px] md:py-[80px] px-4 sm:px-6 md:px-8 lg:px-10">
       <div className="w-full">
         <div className="flex flex-col justify-start items-start w-full">
           {/* Main Footer Content */}

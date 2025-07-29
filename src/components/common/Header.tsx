@@ -7,7 +7,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="w-full bg-global-5 border-b border-[#B3B7BC] sticky top-0 z-50">
-      <div className=" w-full  px-[80px] 2xl:max-w-full 2xl:px-20">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-20">
         <div className="container mx-auto flex flex-row justify-between items-center py-[8px] sm:py-[12px] md:py-0">
           {/* Logo Section */}
           <div className="flex flex-row gap-[6px] sm:gap-[8px] justify-center items-center">
@@ -72,31 +72,35 @@ const Header: React.FC = () => {
           </nav>
 
           {/* Mobile Navigation */}
-          {/* <nav
-            className={`${menuOpen ? 'block' : 'hidden'} lg:hidden absolute top-full left-0 w-full bg-global-5 border-t border-gray-200 z-50`}
+          <nav
+            className={`${menuOpen ? 'block' : 'hidden'} lg:hidden absolute top-full left-0 w-full bg-global-5 border-t border-gray-200 z-50 shadow-lg`}
           >
             <div className="flex flex-col p-4 space-y-4">
               <a
                 href="#home"
                 className="text-[14px] font-inter font-normal leading-[17px] text-global-1 py-2 hover:text-gray-600 transition-colors"
+                onClick={() => setMenuOpen(false)}
               >
                 Home
               </a>
               <a
                 href="#solutions"
                 className="text-[14px] font-inter font-normal leading-[17px] text-global-1 py-2 hover:text-gray-600 transition-colors"
+                onClick={() => setMenuOpen(false)}
               >
                 Solutions
               </a>
               <a
                 href="#blogs"
                 className="text-[14px] font-inter font-normal leading-[17px] text-global-1 py-2 hover:text-gray-600 transition-colors"
+                onClick={() => setMenuOpen(false)}
               >
                 Blogs
               </a>
               <a
                 href="#pricing"
                 className="text-[14px] font-inter font-normal leading-[17px] text-global-1 py-2 hover:text-gray-600 transition-colors"
+                onClick={() => setMenuOpen(false)}
               >
                 Pricing
               </a>
@@ -105,11 +109,12 @@ const Header: React.FC = () => {
                 size="md"
                 fullWidth
                 className="mt-4 px-[24px] py-[12px] text-[16px] font-inter font-bold leading-[20px] bg-global-1 text-button-1 border border-[#2e2e2e] rounded-[10px] shadow-[0px_4px_6px_#cccccc]"
+                onClick={() => setMenuOpen(false)}
               >
                 Book a call
               </Button>
             </div>
-          </nav> */}
+          </nav>
         </div>
       </div>
     </header>
