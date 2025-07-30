@@ -640,7 +640,7 @@ const HomePage: React.FC = () => {
 
       {/* Discovery Call Section */}
       <section
-        className="w-full py-[77px] sm:py-[115px] md:mt-[-1px] md:py-[154px]"
+        className="w-full py-[77px]  sm:py-[115px] md:mt-[64px] md:py-[154px]"
         style={{
           backgroundImage: "url('/images/img_union_gray_50.svg')",
           backgroundSize: 'cover',
