@@ -98,7 +98,7 @@ const UserStories: React.FC = () => {
       style={{
         backgroundImage: "url('/images/img_subtract_gray_50.png')",
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'bottom',
       }}
     >
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">

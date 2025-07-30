@@ -221,11 +221,11 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* VIBE Section */}
-      <section className="w-full mt-[35px] sm:mt-[52px] md:mt-[70px] py-[40px] sm:py-[60px] md:pb-[80px] sm:bg-[url('/images/img_union.png')] sm:bg-[length:106%_100%] sm:bg-center">
+      <section className="w-full mt-[35px] sm:mt-[52px] md:mt-[70px] py-[40px] sm:py-[60px] md:pb-[80px] sm:bg-[url('/images/img_union.png')]  bg-[length:cover] lg:bg-[length:106%_100%] sm:bg-center">
         <div className="container w-full mx-auto flex flex-col justify-start items-center">
           {/* VIBE Header */}
-          <div className="max-w-[1440px] flex flex-col sm:flex-row justify-between items-start sm:items-center w-full px-4 sm:px-6 md:px-8 lg:px-10 mt-[22px] sm:mt-[33px] gap-6 sm:gap-8">
-            <h2 className="text-[20px] sm:text-[30px] md:text-[40px] font-inter font-semibold leading-[24px] sm:leading-[36px] md:leading-[48px] text-left text-global-2 w-full sm:w-[46%] mb-[9px] sm:mb-[13px] md:mb-[18px]">
+          <div className="max-w-[1440px] flex flex-col sm:flex-row justify-center xl:justify-between items-start sm:items-center w-full px-4 sm:px-6 md:px-8 lg:px-10 mt-[22px] sm:mt-[33px] xl:gap-8">
+            <h2 className="text-[20px] sm:text-[30px] md:text-[40px] font-inter font-semibold leading-[24px] sm:leading-[36px] md:leading-[48px] text-left text-global-2 w-full sm:w-[43%] xl:w-[46%] mb-[9px] sm:mb-[13px] md:mb-[18px]">
               VIBE CODING, BUT FOR
               <br />
               VIBE MARKETERS
@@ -361,11 +361,11 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Feature Sections */}
-      <div className="w-full flex flex-col justify-start items-center">
+      <div className="w-full flex flex-col justify-start items-center lg:mt-10">
         {/* Launch Growth Workflows */}
         <FadeInAnimation delay={0} className="w-full">
           <section
-            className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] md:bg-[url('/images/Frame0.png')] bg-left bg-no-repeat"
+            className="w-full flex flex-col lg:flex-row justify-start items-center sm:py-[50px] lg:py-[124px] md:bg-[url('/images/Frame0.png')] bg-left bg-no-repeat"
             style={{
               backgroundSize: '100% 100%',
             }}
@@ -404,7 +404,7 @@ const HomePage: React.FC = () => {
               <Image
                 src="/images/ai-bot.webp"
                 alt="Launch Growth Workflows"
-                className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[480px] xl:h-[640px] rounded-[20px] mt-[20px] lg:mt-0 lg:ml-[40px] sm:ml-[60px] md:ml-[80px]"
+                className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[480px] xl:h-[640px] rounded-[20px] mt-[20px] lg:mt-0 ml-0 lg:ml-[40px]"
                 width={500}
                 height={500}
               />
@@ -415,7 +415,7 @@ const HomePage: React.FC = () => {
         {/* Edit Automation Workflow */}
         <FadeInAnimation delay={100} className="w-full">
           <section
-            className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] sm:bg-[url('/images/Frame1.png')] bg-right bg-no-repeat"
+            className="w-full flex flex-col lg:flex-row justify-start items-center py-[50px] lg:py-[77px] sm:bg-[url('/images/Frame1.png')] bg-right bg-no-repeat"
             style={{
               backgroundSize: '100% 100%',
             }}
@@ -433,7 +433,7 @@ const HomePage: React.FC = () => {
                 width={500}
                 height={500}
               />
-              <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full  mt-5 sm:mt-00  lg:ml-[40px] sm:ml-[60px] md:ml-[80px] order-2 lg:order-2">
+              <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full  mt-5 lg:mt-0  lg:ml-[40px] order-2 lg:order-2">
                 <h3 className="text-[18px] sm:text-[24px] md:text-[32px] font-inter font-semibold leading-[24px] sm:leading-[33px] md:leading-[44px] text-left text-global-2 w-full">
                   Edit every step of your automation workflow — in an AI spreadsheet
                 </h3>
@@ -469,7 +469,7 @@ const HomePage: React.FC = () => {
         {/* Integrate with MCP Server */}
         <FadeInAnimation delay={200} className="w-full">
           <section
-            className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] md:bg-[url('/images/Frame0.png')] bg-left bg-no-repeat"
+            className="w-full flex flex-col lg:flex-row justify-start items-center py-[50px] lg:py-[124px] md:bg-[url('/images/Frame0.png')] bg-left bg-no-repeat"
             style={{
               backgroundSize: '100% 100%',
             }}
@@ -505,7 +505,7 @@ const HomePage: React.FC = () => {
               <Image
                 src="/images/mcp-server.jpg"
                 alt="Integrate with MCP Server"
-                className="w-full  h-[200px] sm:h-[300px] md:h-[400px] lg:h-[480px] xl:h-[640px] rounded-[20px] mt-[20px] lg:mt-0 lg:ml-[40px] sm:ml-[60px] md:ml-[80px]"
+                className="w-full  h-[200px] sm:h-[300px] md:h-[400px] lg:h-[480px] xl:h-[640px] rounded-[20px] mt-[20px] lg:mt-0 lg:ml-[40px]"
                 width={500}
                 height={500}
               />
@@ -516,7 +516,7 @@ const HomePage: React.FC = () => {
         {/* Track Lead Journey */}
         <FadeInAnimation delay={300} className="w-full">
           <section
-            className="w-full flex flex-col lg:flex-row justify-start items-center py-[23px] sm:bg-[url('/images/Frame1.png')] bg-right bg-no-repeat"
+            className="w-full flex flex-col lg:flex-row justify-start items-center py-[50px] lg:py-[77px] sm:bg-[url('/images/Frame1.png')] bg-right bg-no-repeat"
             style={{
               backgroundSize: '100% 100%',
             }}
@@ -534,7 +534,7 @@ const HomePage: React.FC = () => {
                 width={500}
                 height={500}
               />
-              <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full  mt-[20px]  lg:ml-[40px] sm:ml-[60px] md:ml-[80px] sm:mt-0 order-2 lg:order-2">
+              <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] justify-start items-start w-full  mt-5 lg:mt-0  lg:ml-[40px] order-2 lg:order-2">
                 <h3 className="text-[18px] sm:text-[24px] md:text-[32px] font-inter font-semibold leading-[24px] sm:leading-[33px] md:leading-[44px] text-left text-global-2 w-full">
                   Track every lead journey — from first message to closed deal
                 </h3>
@@ -618,7 +618,7 @@ const HomePage: React.FC = () => {
                       <img
                         src={feature.icon}
                         alt="Feature Icon"
-                        className="w-[16px] md:w-[32px] h-[16px] sm:w-[24px] md:h-[32px]"
+                        className="w-[16px] md:w-[32px] h-[16px] sm:w-[24px] md:h-[32px] transform transition-all duration-300 group-hover:scale-110 group-hover:filter group-hover:brightness-110"
                       />
                       <h4 className="text-[12px] sm:text-[18px] md:text-[24px] font-inter font-semibold leading-[15px] sm:leading-[22px] md:leading-[30px] text-left text-global-2 w-auto">
                         {feature.title}
@@ -644,7 +644,7 @@ const HomePage: React.FC = () => {
         style={{
           backgroundImage: "url('/images/img_union_gray_50.svg')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'top',
         }}
       >
         <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10">
@@ -693,8 +693,10 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
+
       {/* User Stories Section */}
       <UserStories />
+
       {/* What Do You Want to Automate Section */}
       <section className="w-full flex flex-col gap-[30px] sm:gap-[45px] md:gap-[60px] justify-start items-center mt-[89px] sm:mt-[133px] md:mt-[178px] px-4 sm:px-6 md:px-8 lg:px-10">
         <h2 className="text-[20px] sm:text-[30px] md:text-[40px] font-inter font-bold leading-[24px] sm:leading-[36px] md:leading-[49px] text-center text-global-2 w-full">
