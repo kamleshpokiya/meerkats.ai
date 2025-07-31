@@ -94,17 +94,17 @@ const UserStories: React.FC = () => {
 
   return (
     <section
-      className="w-full py-[20px]"
-      style={{
-        backgroundImage: "url('/images/img_subtract_gray_50.png')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'bottom',
-      }}
+      className="w-full lg:bg-[url('/images/img_subtract_gray_50.png')] bg-[length:110%_110%]  xl:bg-[length:cover] bg-bottom"
+      // style={{
+      //   backgroundImage: "url('/images/img_subtract_gray_50.png')",
+      //   backgroundSize: 'cover',
+      //   backgroundPosition: 'bottom',
+      // }}
     >
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1440px] mx-auto px-8  lg:px-8">
         <div className="flex flex-col gap-[40px] sm:gap-[60px] md:gap-[80px] justify-start items-center w-full">
           <div className="flex flex-row justify-center items-center w-full">
-            <h2 className="text-[24px] sm:text-[32px] md:text-[40px] font-inter font-bold leading-[32px] sm:leading-[40px] md:leading-[48px] text-center text-global-2 w-auto">
+            <h2 className="text-[40px] font-inter font-bold leading-[48px] text-center text-global-2 w-auto">
               User stories
             </h2>
           </div>
@@ -129,22 +129,22 @@ const UserStories: React.FC = () => {
                       {pageTestimonials.map((testimonial, index) => (
                         <div
                           key={startIdx + index}
-                          className="flex flex-col gap-[20px] sm:gap-[24px] md:gap-[28px] justify-start items-start w-full lg:w-1/2 px-[20px] sm:px-[24px] md:px-[32px] py-[24px] sm:py-[28px] md:py-[32px] border border-black rounded-[20px] bg-white h-full min-h-[200px] sm:min-h-[220px] md:min-h-[240px]"
+                          className="flex flex-col gap-[20px] sm:gap-[24px] md:gap-[28px] justify-start items-start w-full lg:w-1/2 p-8 border border-black rounded-[20px] bg-white h-full min-h-[200px] sm:min-h-[220px] md:min-h-[240px]"
                         >
-                          <p className="text-[14px] sm:text-[16px] md:text-[18px] font-roboto font-normal leading-[20px] sm:leading-[24px] md:leading-[26px] text-left text-global-1 w-full flex-1">
+                          <p className="text-[18px] font-roboto font-normal leading-[27px] text-left text-global-1 w-full flex-1">
                             "{testimonial.quote}"
                           </p>
                           <div className="flex flex-row gap-[12px] sm:gap-[16px] md:gap-[20px] justify-start items-center w-full mt-auto">
                             <img
                               src="/images/img_avatar_image.png"
                               alt="User Avatar"
-                              className="w-[40px] sm:w-[48px] md:w-[56px] h-[40px] sm:h-[48px] md:h-[56px] rounded-[20px] sm:rounded-[24px] md:rounded-[28px] flex-shrink-0"
+                              className="w-[56px] h-[56px] rounded-[20px] sm:rounded-[24px] md:rounded-[28px] flex-shrink-0"
                             />
                             <div className="flex flex-col justify-start items-start flex-1">
-                              <p className="text-[12px] sm:text-[14px] md:text-[16px] font-roboto font-semibold leading-[16px] sm:leading-[18px] md:leading-[20px] text-left text-global-1 w-auto">
+                              <p className="text-[18px] font-roboto font-semibold leading-[24px] text-left text-global-1 w-auto">
                                 {testimonial.author}
                               </p>
-                              <p className="text-[12px] sm:text-[14px] md:text-[16px] font-roboto font-normal leading-[16px] sm:leading-[18px] md:leading-[20px] text-left text-global-1 w-auto">
+                              <p className="text-[16px] font-roboto font-normal leading-[24px] text-left text-global-1 w-auto">
                                 {testimonial.company}
                               </p>
                             </div>

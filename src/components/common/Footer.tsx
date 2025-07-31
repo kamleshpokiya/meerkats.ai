@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="w-full bg-global-5 py-[40px] sm:py-[60px] md:py-[80px] px-4 sm:px-6 md:px-8 lg:px-10">
+    <footer className="w-full bg-global-5 py-[40px] sm:py-[60px] md:py-[80px] px-8 lg:px-10">
       <div className="w-full">
         <div className="flex flex-col justify-start items-start w-full">
           {/* Main Footer Content */}
@@ -81,12 +81,12 @@ const Footer: React.FC = () => {
           </div> */}
 
           {/* Divider Line */}
-          <div className="w-full h-[1px] bg-global-1 mb-[24px] sm:mb-[28px] md:mb-[32px]"></div>
+          <div className="w-full h-[1px] bg-global-1 mb-8 sm:mb-[28px] md:mb-[32px]"></div>
 
           {/* Bottom Footer */}
-          <div className="flex flex-col sm:flex-row justify-between items-center sm:items-center w-full gap-6 sm:gap-0">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-full gap-[64px] sm:gap-0">
             {/* Copyright and Links */}
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-[20px] md:gap-[24px] justify-center sm:justify-start items-center sm:items-center">
+            <div className="flex flex-col sm:flex-row gap-[24px] justify-center sm:justify-start items-start sm:items-center">
               <p className="text-[12px] sm:text-[13px] md:text-[14px] font-roboto font-normal leading-[15px] sm:leading-[16px] md:leading-[17px] text-global-1">
                 © 2023 Relume. All rights reserved.
               </p>

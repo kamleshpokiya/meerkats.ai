@@ -76,12 +76,12 @@ const HowItWorks: React.FC = () => {
   return (
     <section
       ref={howItWorksRef}
-      className="container mx-auto w-full py-[32px] sm:py-[48px] md:py-[64px] px-4 sm:px-6 md:px-8 lg:px-10"
+      className="container mx-auto mt-[105px] sm:mt-0 w-full py-[32px] sm:py-[48px] md:py-[64px] px-8 sm:px-6 md:px-8 lg:px-10"
     >
       <div className="w-full">
-        <div className="flex flex-col gap-[20px] sm:gap-[30px] md:gap-[40px] justify-start items-center w-full">
+        <div className="flex flex-col gap-[46px] justify-start items-center w-full">
           {/* Section Header */}
-          <div className="flex flex-col gap-[23px] sm:gap-[34px] md:gap-[46px] justify-start items-center w-full">
+          <div className="flex flex-col gap-[46px] justify-start items-center w-full">
             {/* Horizontal Line with Logo Container */}
             <div className="relative w-full flex items-center justify-center max-w-[750px] px-4 sm:px-6">
               {/* Left Line */}
@@ -100,12 +100,12 @@ const HowItWorks: React.FC = () => {
               {/* Right Line */}
               <div className="flex-1 h-[1px] bg-[#D9D9D9]"></div>
             </div>
-            <h2 className="text-[20px] sm:text-[30px] md:text-[40px] font-inter font-bold leading-[24px] sm:leading-[36px] md:leading-[49px] text-center text-global-2 w-auto">
+            <h2 className="text-[40px] font-inter font-bold leading-[48px] text-center text-global-2 w-auto">
               How it works
             </h2>
           </div>
           {/* Workflow Steps and Image */}
-          <div className="flex flex-col lg:flex-row justify-between items-start w-full  mx-auto gap-[40px] sm:gap-[60px] md:gap-[80px]">
+          <div className="flex flex-col lg:flex-row justify-between items-start w-full  mx-auto gap-[80px]">
             {/* Steps */}
             <div className="relative w-full lg:w-[46%]">
               <div className="flex flex-col gap-[24px] sm:gap-[36px] md:gap-[48px]">
@@ -118,13 +118,13 @@ const HowItWorks: React.FC = () => {
                     {/* Step Bullet and Line */}
                     <div className="flex flex-col items-center">
                       <div
-                        className={`w-[8px] sm:w-[12px] md:w-[16px] h-[8px] sm:h-[12px] md:h-[16px] rounded-[2px] transition-colors duration-700 ease-in-out 
+                        className={`w-[16px] h-[16px] rounded-[2px] transition-colors duration-700 ease-in-out 
                           bg-black
                         `}
                       ></div>
                       {index < workflowSteps.length - 1 && (
                         <div
-                          className={`w-[2px] h-[60px] sm:h-[90px] md:h-[120px] mt-[8px] sm:mt-[12px] md:mt-[16px] transition-colors duration-700 ease-in-out ${
+                          className={`w-[2px] h-[120px] mt-[8px] sm:mt-[12px] md:mt-[16px] transition-colors duration-700 ease-in-out ${
                             visibleSteps[index] ? 'bg-[#F97316]' : 'bg-global-3'
                           }`}
                         ></div>
@@ -132,10 +132,10 @@ const HowItWorks: React.FC = () => {
                     </div>
                     {/* Step Content */}
                     <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[16px] flex-1">
-                      <h4 className="text-[12px] sm:text-[18px] md:text-[24px] font-inter font-bold leading-[15px] sm:leading-[22px] md:leading-[30px] text-left text-global-2 w-auto">
+                      <h4 className="text-[24px] font-inter font-bold leading-[33px] text-left text-global-2 w-auto">
                         {step.title}
                       </h4>
-                      <p className="text-[9px] sm:text-[13px] md:text-[18px] font-inter font-normal leading-[13px] sm:leading-[20px] md:leading-[27px] text-left text-global-3 w-full">
+                      <p className="text-[18px] font-inter font-normal leading-[27px] text-left text-global-3 w-full">
                         {step.description}
                       </p>
                     </div>
@@ -148,7 +148,7 @@ const HowItWorks: React.FC = () => {
               <Image
                 src="/images/how2.png"
                 alt="How It Works"
-                className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[480px] xl:h-[640px] rounded-[20px] bg-gray-100"
+                className="w-full h-[430px] lg:h-[480px] xl:h-[640px] rounded-[20px] bg-gray-100"
                 width={500}
                 height={500}
               />
