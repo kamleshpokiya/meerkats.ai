@@ -158,8 +158,10 @@ const HomePage: React.FC = () => {
                   {/* Search Input */}
                   <div className="flex flex-row justify-between items-center w-full px-[32px] sm:px-[30px] md:px-[40px] py-[6px] sm:py-[20px] md:py-[16px] border border-[#18181B] rounded-[16px] bg-global-5">
                     <textarea
-                      placeholder="Ask meerkats AI to find ceo names of recently funded startups..."
-                      className="sm:hidden flex-1 resize-none pr-[35px] overflow-hidden placeholder:text-wrap placeholder:text-[#52525B] sm:h-auto placeholder:sm:text-nowrap text-[16px] font-inter font-normal leading-[24px] text-left text-global-3 bg-transparent border-none outline-none mr-[2px] sm:mr-[12px] md:mr-[16px]"
+                      placeholder={
+                        'Ask meerkats AI to find ceo \nnames of recently funded \nstartups...'
+                      }
+                      className="sm:hidden flex-1 resize-none  overflow-hidden placeholder:text-wrap placeholder:text-[#52525B] sm:h-auto placeholder:sm:text-nowrap text-[16px] font-inter font-normal leading-[24px] text-left text-global-3 bg-transparent border-none outline-none mr-[2px] sm:mr-[12px] md:mr-[16px]"
                       rows={3}
                     />
                     <textarea
@@ -702,8 +704,10 @@ const HomePage: React.FC = () => {
               {/* Search Input */}
               <div className="flex flex-row justify-between items-center w-full px-[32px] sm:px-[30px] md:px-[40px] py-[6px] sm:py-[20px] md:py-[16px] border border-[#18181B] rounded-[16px] bg-global-5">
                 <textarea
-                  placeholder="Ask meerkats AI to find ceo names of recently funded startups..."
-                  className="sm:hidden flex-1 resize-none pr-[35px] overflow-hidden placeholder:text-wrap placeholder:text-[#52525B] sm:h-auto placeholder:sm:text-nowrap text-[16px] font-inter font-normal leading-[24px] text-left text-global-3 bg-transparent border-none outline-none mr-[2px] sm:mr-[12px] md:mr-[16px]"
+                  placeholder={
+                    'Ask meerkats AI to find ceo \nnames of recently funded \nstartups...'
+                  }
+                  className="sm:hidden flex-1 resize-none overflow-hidden placeholder:text-wrap placeholder:text-[#52525B] sm:h-auto placeholder:sm:text-nowrap text-[16px] font-inter font-normal leading-[24px] text-left text-global-3 bg-transparent border-none outline-none mr-[2px] sm:mr-[12px] md:mr-[16px]"
                   rows={3}
                 />
                 <textarea
