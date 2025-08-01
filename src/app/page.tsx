@@ -161,12 +161,12 @@ const HomePage: React.FC = () => {
                       placeholder={
                         'Ask meerkats AI to find ceo \nnames of recently funded \nstartups...'
                       }
-                      className="sm:hidden flex-1 resize-none  overflow-hidden placeholder:text-wrap placeholder:text-[#52525B] sm:h-auto placeholder:sm:text-nowrap text-[16px] font-inter font-normal leading-[24px] text-left text-global-3 bg-transparent border-none outline-none mr-[2px] sm:mr-[12px] md:mr-[16px]"
+                      className="sm:hidden flex-1 resize-none  overflow-x-hidden placeholder:text-wrap placeholder:text-[#52525B] sm:h-auto placeholder:sm:text-nowrap text-[16px] font-inter font-normal leading-[24px] text-left text-global-3 bg-transparent border-none outline-none mr-[2px] sm:mr-[12px] md:mr-[16px]"
                       rows={3}
                     />
                     <textarea
                       placeholder="Ask meerkats AI to find ceo names of recently funded startups..."
-                      className="hidden sm:flex flex-1 resize-none overflow-hidden placeholder:text-wrap placeholder:text-[#52525B] sm:h-auto placeholder:sm:text-nowrap text-[16px] font-inter font-normal leading-[24px] text-left text-global-3 bg-transparent border-none outline-none mr-[2px] sm:mr-[12px] md:mr-[16px]"
+                      className="hidden sm:flex flex-1 resize-none overflow-x-hidden placeholder:text-wrap placeholder:text-[#52525B] sm:h-auto placeholder:sm:text-nowrap text-[16px] font-inter font-normal leading-[24px] text-left text-global-3 bg-transparent border-none outline-none mr-[2px] sm:mr-[12px] md:mr-[16px]"
                       rows={1}
                     />
                     <img
@@ -707,12 +707,12 @@ const HomePage: React.FC = () => {
                   placeholder={
                     'Ask meerkats AI to find ceo \nnames of recently funded \nstartups...'
                   }
-                  className="sm:hidden flex-1 resize-none overflow-hidden placeholder:text-wrap placeholder:text-[#52525B] sm:h-auto placeholder:sm:text-nowrap text-[16px] font-inter font-normal leading-[24px] text-left text-global-3 bg-transparent border-none outline-none mr-[2px] sm:mr-[12px] md:mr-[16px]"
+                  className="sm:hidden flex-1 resize-none overflow-x-hidden placeholder:text-wrap placeholder:text-[#52525B] sm:h-auto placeholder:sm:text-nowrap text-[16px] font-inter font-normal leading-[24px] text-left text-global-3 bg-transparent border-none outline-none mr-[2px] sm:mr-[12px] md:mr-[16px]"
                   rows={3}
                 />
                 <textarea
                   placeholder="Ask meerkats AI to find ceo names of recently funded startups..."
-                  className="hidden sm:flex flex-1 resize-none overflow-hidden placeholder:text-wrap placeholder:text-[#52525B] sm:h-auto placeholder:sm:text-nowrap text-[16px] font-inter font-normal leading-[24px] text-left text-global-3 bg-transparent border-none outline-none mr-[2px] sm:mr-[12px] md:mr-[16px]"
+                  className="hidden sm:flex flex-1 resize-none overflow-x-hidden placeholder:text-wrap placeholder:text-[#52525B] sm:h-auto placeholder:sm:text-nowrap text-[16px] font-inter font-normal leading-[24px] text-left text-global-3 bg-transparent border-none outline-none mr-[2px] sm:mr-[12px] md:mr-[16px]"
                   rows={1}
                 />
                 <img
